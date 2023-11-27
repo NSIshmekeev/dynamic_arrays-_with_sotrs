@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include "function.h"
 using namespace std;
 
@@ -6,29 +6,29 @@ int main()
 {
 	setlocale(LC_ALL, "Russian");
 	int** array;
-	cout << "Ââåäèòå êîë-âî ñòðîê è ñòîáöîâ" << endl;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»-Ð²Ð¾ ÑÑ‚Ñ€Ð¾Ðº Ð¸ ÑÑ‚Ð¾Ð±Ñ†Ð¾Ð²" << endl;
 	int rows, cols;
 	funcmp comp1 = &comparator1;
 	funcmp comp2 = &comparator2;
 	cin >> rows >> cols;
-	cout << "Ñîçäàíèå ìàññèâà" << endl;
+	cout << "Ð¡Ð¾Ð·Ð´Ð°Ð½Ð¸Ðµ Ð¼Ð°ÑÑÐ¸Ð²Ð°" << endl;
 	create_array(array, rows, cols);
 	random_array(array);
 	print_array(array);
 	cout << endl;
-	cout << "Áûñòðàÿ ñîðòèðîâêà ìàññèâà áåç êîìïàðàòîðà" << endl;
+	cout << "Ð‘Ñ‹ÑÑ‚Ñ€Ð°Ñ ÑÐ¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ° Ð¼Ð°ÑÑÐ¸Ð²Ð° Ð±ÐµÐ· ÐºÐ¾Ð¼Ð¿Ð°Ñ€Ð°Ñ‚Ð¾Ñ€Ð°" << endl;
 	quick_sort2D(array);
 	print_array(array);
 	cout << endl;
-	cout << "Áûñòðàÿ ñîðòèðîâêà ìàññèâà c êîìïàðàòîðîì (ñðàâíèâàíèå ïî êâàäðàòó ÷èñëà)" << endl;
+	cout << "Ð‘Ñ‹ÑÑ‚Ñ€Ð°Ñ ÑÐ¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ° Ð¼Ð°ÑÑÐ¸Ð²Ð° c ÐºÐ¾Ð¼Ð¿Ð°Ñ€Ð°Ñ‚Ð¾Ñ€Ð¾Ð¼ (ÑÑ€Ð°Ð²Ð½Ð¸Ð²Ð°Ð½Ð¸Ðµ Ð¿Ð¾ ÐºÐ²Ð°Ð´Ñ€Ð°Ñ‚Ñƒ Ñ‡Ð¸ÑÐ»Ð°)" << endl;
 	quick_sort2D(array, comp1);
 	print_array(array);
 	cout << endl;
-	cout << "Áûñòðàÿ ñîðòèðîâêà ìàññèâà c êîìïàðàòîðîì (ñðàâíèâàíèå ïî îñòàòêó äåëåíèÿ ÷èñëà íà 10, îòñòàòîê îò îòïðèöàòåëüíûõ ÷èñåë áåðåòñÿ îò ìîäóëÿ)" << endl;
+	cout << "Ð‘Ñ‹ÑÑ‚Ñ€Ð°Ñ ÑÐ¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ° Ð¼Ð°ÑÑÐ¸Ð²Ð° c ÐºÐ¾Ð¼Ð¿Ð°Ñ€Ð°Ñ‚Ð¾Ñ€Ð¾Ð¼ (ÑÑ€Ð°Ð²Ð½Ð¸Ð²Ð°Ð½Ð¸Ðµ Ð¿Ð¾ Ð¾ÑÑ‚Ð°Ñ‚ÐºÑƒ Ð´ÐµÐ»ÐµÐ½Ð¸Ñ Ñ‡Ð¸ÑÐ»Ð° Ð½Ð° 10, Ð¾Ñ‚ÑÑ‚Ð°Ñ‚Ð¾Ðº Ð¾Ñ‚ Ð¾Ñ‚Ð¿Ñ€Ð¸Ñ†Ð°Ñ‚ÐµÐ»ÑŒÐ½Ñ‹Ñ… Ñ‡Ð¸ÑÐµÐ» Ð±ÐµÑ€ÐµÑ‚ÑÑ Ð¾Ñ‚ Ð¼Ð¾Ð´ÑƒÐ»Ñ)" << endl;
 	quick_sort2D(array, comp2);
 	print_array(array);
 	cout << endl;
-	cout << "Ñîðòèðîâêà ñëèÿíèåì" << endl;
+	cout << "Ð¡Ð¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ° ÑÐ»Ð¸ÑÐ½Ð¸ÐµÐ¼" << endl;
 	merge_array(array);
 	print_array(array);
 	delete_array(array);

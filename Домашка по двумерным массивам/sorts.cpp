@@ -1,4 +1,4 @@
-#include "function.h"
+п»ї#include "function.h"
 #include <iostream>
 using namespace std;
 
@@ -102,7 +102,7 @@ void quick_sort2D(int** array)
 }
 
 
-// Быстрая сортировка с компаратором
+// Р‘С‹СЃС‚СЂР°СЏ СЃРѕСЂС‚РёСЂРѕРІРєР° СЃ РєРѕРјРїР°СЂР°С‚РѕСЂРѕРј
 void my_quick_sort(int* list, int size, funcmp cmp)
 {
 	int i = 0;
